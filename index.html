@@ -2,14 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Web Bluetooth Demo (Chrome)</title>
+    <title>Web Bluetooth Receiver (Chrome)</title>
 </head>
 <body>
-    <h1>Web Bluetooth Battery Level Reader</h1>
-    <!-- A button is required to initiate the connection via a user gesture -->
-    <button id="connectButton">Connect to Bluetooth Device & Read Battery</button>
+    <h1>Web Bluetooth Data Receiver</h1>
+    
+    <button id="connectButton">Connect to Device</button>
     <p>Status: <span id="status">Ready</span></p>
-    <p>Battery Level: <span id="batteryLevel">N/A</span></p>
+
+    <hr>
+    
+    <h2>Receive Data Controls</h2>
+    <button id="readButton" disabled>Read Static Value Once</button>
+    <button id="subscribeButton" disabled>Start Notifications</button>
+
+    <h3>Received Data Output:</h3>
+    <pre id="receivedData">N/A</pre>
 
     <script src="app.js"></script>
 </body>
